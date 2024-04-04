@@ -110,6 +110,11 @@ print()
 
 print('Выводим из списка int максимальное число, минимально число и сумму чисел')
 my_ls9 = [4, 67, 77, 34, 23, 2809, 5650]
+print(my_ls9)
 print(max(my_ls9))
 print(min(my_ls9))
 print(sum(my_ls9))
+alf = 'zxcvbnmasdfghjklqwertyuiopAZ'
+my_ls10 = list(alf)
+print("максимальная буква", max(alf))
+print('минимальная буква', min(alf))

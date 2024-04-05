@@ -1,0 +1,69 @@
+file_names = ['Document1.txt', 'image1.jpg', 'Document2.txt', 'image2.jpg']
+print(file_names)
+
+
+print('Выводим на экран через цикл каждый элемент списка')
+for file_name in file_names:    # Количество итераций равно количеству элементов коллекции
+    print(file_name)
+
+
+print('Выводим на экран через цикл каждый элемент str. То есть символ')
+greeting = 'Hello, world!'
+for char in greeting:
+    print(char)
+print()
+
+
+print('Считаем через цикл количество подходящих элементов')
+greeting = 'Hello, world!'
+count_l = 0
+for char in greeting:
+    if char == 'l':
+        count_l += 1
+print(count_l)
+print()
+
+print('Перебираем цикл в цикле')
+students = ['Alice', 'Bob', 'charlie', 'David']
+for student in students:
+    print(student)
+    for char in student:
+        print(char)
+
+
+print('Создаем список методом range и дополняем его через цикл в котором перебираем range')
+numbers = list(range(5, 100 , 10))   # range от 5 до 100 с шагом 10
+for i in range(16):
+    numbers.append(i)
+print(numbers)
+
+print('Показываем как работают ключевые слова continue и break')
+numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+for num in numbers:     # Перебираем список
+    if num % 2 == 0:    # Если цифра равняется чётной заходим в условие
+        continue        # Continue переносит сразу нас в следующую итерацию цикла
+    if num == 10:       # Если цифра равняется 10 то активируем break
+        break           # Этот break никогда не будет активирован потому, что когда num == 10 условие выше вернёт нас в следующую итерацию.
+    if num == 11:       # Если цифра равняется 11 то активируем break
+        break           # Break завершает работу цикла
+    print(num)
+    print()
+
+
+print('Прибавляем к каждому элементу списк +1 через цикл по индексам')
+numbers = [10, 11, 12, 13, 14, 15]
+for i in range(len(numbers)):
+    numbers[i] += 1
+print(numbers)
+print()
+
+
+print('Записываем выбраный элемент через цикл. Индексы коллекции и их количество')
+greeting = 'Hello, world!'
+indexes_l = []
+count_l = 0
+for i in range(len(greeting)):
+    if greeting[i] == 'l':
+        count_l += 1
+        indexes_l.append(i)
+print(f'В "{greeting}" индексы буквы l {indexes_l} и их количество {count_l}')

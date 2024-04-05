@@ -16,7 +16,7 @@ my_list = ['apple', 1, 1.5, True, [1, 2, 3]]
 print(my_list)
 print()
 
-print('Сравнение списков')
+print('Сравнение списков')    # Сравнение элементов происходит по их индексам
 my_ls1 = [1, 2, 3]
 my_ls2 = [1, 3, 2]
 my_ls3 = [1, 2, 3]
@@ -27,7 +27,7 @@ print()
 
 print('Вывод bool при пустом списке и при списке со значением')
 print(bool([]))
-print(bool([0]))
+print(bool([0]))   # Даже если значение в списке цифра 0, то выведет True
 print()
 
 
@@ -64,7 +64,7 @@ print('Метод list.pop(index) убирает из списка по инде
 fruits_4 = ['apple', 'banana', 'cherry']
 fruit = fruits_4.pop(0)   # Метод убирает из списка по индексу и сохраняет в переменную. Default index [-1]
 print(fruit)
-print(fruits)
+print(fruits_4)
 print()
 
 print('Добавляем в список элементы других коллекций методом list.extend()')

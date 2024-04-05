@@ -1,0 +1,50 @@
+fruits = ['apple', 'banana', 'cherry', 'watermelon']
+print(fruits[0])
+print(fruits[-4])
+print()
+
+
+print('Заменяем через индекс элемент списка')
+fruits[0] = 'pineapple'
+print(fruits)
+print()
+
+
+print('Замена элементов списка друг с другом через присвоение')
+print(fruits)
+fruits[0], fruits[3] = fruits[3], fruits[0]
+print(fruits)
+print()
+
+
+print('Слайсы - это срезы по индексам. Можно присваивать в новые списки')
+numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(numbers[0:5])               # Вывод с первого до пятого
+print(numbers[:5])                # Тоже вывод с первого до пятого
+print(numbers[0:])                # Вывод с первого до последнего
+print(numbers[:])                 # Тоже вывод с первого до последнего
+print(numbers[0:len(numbers)])    # Тоже вывод с первого до последнего
+print(numbers[0:12:2])            # Слайсы с шагом 2 третий аргумент
+print(numbers[::2])               # Тоже слайс с шагом 2
+print(numbers[3:2])               # Вернет пустой список
+print(numbers[0:400])             # Вернет тоже полный список
+print(numbers[-5:-1])             # Вернет от 5 до 8
+print(numbers[::-1])              # Разворачиваем список
+new_list_numbers = numbers[3:7]   # Можно присваивать новым переменным
+print(new_list_numbers)
+print()
+
+
+# Три способа развернуть лист:
+# Первый способ
+numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(numbers[::-1])
+# Второй способ
+numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+numbers.reverse()
+print(numbers)
+# Третий способ
+numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+new_numbers = list(reversed(numbers))    # Нужно обязательно возврат функции reserved обернуть в list
+print(new_numbers)
+print(list(reversed(list(reversed(numbers)))))

@@ -1,6 +1,6 @@
 numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 print(numbers[0:5])             # Outputs: [0, 1, 2, 3, 4]
-new_numbers = numbers[0:5]
+new_numbers = numbers[0:5]      # Save in new_numbers slice [0:5]
 print(new_numbers)              # Outputs: [0, 1, 2, 3, 4]
 print(numbers[0:10])            # Outputs: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 print(numbers[0:len(numbers)])  # Outputs: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]

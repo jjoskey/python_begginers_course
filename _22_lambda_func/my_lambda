@@ -9,13 +9,15 @@ print(sort_by_len('banana'))          # Вывод 6
 print(sort_by_len_lambda('banana'))   # Вывод 6
 
 
-
+# Используем lambda для сортировки массива
 fruits = ['banana', 'apple', 'cherry', 'date']
 sorted_fruits = sorted(fruits, key=lambda element: len(element))
 print(sorted_fruits)
 
 
-
+# Используем lambda функции сортировки max
 fruits = ['banana', 'apple', 'cherry', 'date']
 sorted_len_fruits = max(fruits, key=lambda element: len(element))
 print(sorted_len_fruits)   # Вывод banana
+
+

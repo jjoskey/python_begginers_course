@@ -169,4 +169,3 @@ ork = Ork(level=1)
 elf = Elf(level=1)
 
 fight(character_1=ork, character_2=elf)
-#test

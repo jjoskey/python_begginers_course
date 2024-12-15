@@ -23,6 +23,7 @@ def get_best_students(*, students: list[dict]) -> list[dict]:
     best_average_grade = 0
     for student in students:
         grades = student["grades"]
+        print(grades)
         if grades is None:
             average_grade = 0
         else:

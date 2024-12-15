@@ -29,9 +29,9 @@ print(type(my_integer), my_integer)  # Outputs: <class 'int'> 10
 
 
 my_string = input("Enter a number: ")
-print(type(my_string))  # Outputs: <class 'str'>
+print(type(my_string), my_string)  # Outputs: <class 'str'>
 my_integer = int(my_string)
-print(my_integer)  # Outputs: 10
+print(type(my_integer), my_integer)  # Outputs: 10
 
 
 big_integer = 2 ** 1000

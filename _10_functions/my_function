@@ -1,0 +1,52 @@
+numbers_1 = [1, 2, 3, 4, 5, 6, 7]
+
+average_1 = sum(numbers_1) / len(numbers_1)
+print(average_1)
+
+numbers_2 = [8, 9, 10, 11, 12, 13, 14]
+average_2 = sum(numbers_2) / len(numbers_2)
+print(average_2)
+
+# Функция которая считает среднее значение
+def avg(numbers):
+    return sum(numbers) / len(numbers)
+
+
+numbers_3 = [15, 16, 17, 18, 19, 20, 21, 22]
+print(avg(numbers_3))
+print(avg(list(range(100))))
+
+# Функция которая считает количество гласных в строке
+def count_vowels(string):
+    VOWELS = 'aeiouyAEIOUY'
+    count = 0
+    count_vowels = 0
+    for char in string:
+        count += 1
+        if char in VOWELS:
+            count_vowels += 1
+
+    return f'количество букв {count} из них гласных {count_vowels}'
+
+# Вызов функции count_vowels
+print(count_vowels('My mother is big-big bisnesswomen'))
+
+# Функция заглушка которая возвращает ничего
+def nothing():
+    pass
+
+# Функция с обязательными аргументами
+def format_date(*, day: int, month: str) -> str:
+    return f'The date is {day} of {month}'
+
+
+#print(format_date(15, 'october'))
+#print(format_date('october', 15))
+print(format_date(month='october', day=15))
+
+# Функция с обязательными аргументами и с аргументом по умолчанию
+def custom_greeting(*, name: str, greeting: str = 'Hello') -> str:
+    return f'{greeting}, {name}'
+
+print(custom_greeting(name='Alice', greeting='Good morning'))
+print(custom_greeting(name='Alice')) 
